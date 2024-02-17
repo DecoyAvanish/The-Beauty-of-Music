@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Beauty of Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="icons">
+      <a href="main.html" id="home"><i class="fa fa-home"></i></a>
+      <a class="active" href="instruments.html" id="Music Theory"><i class="fa fa-music"></i></a>
+      <a href="pianointro.html" id="piano"><i class="fa fa-keyboard-o"></i></a>
+    </div>
+
+    <h1>Quiz</h1>
+        <p class="info">Guess the instrument's family based on the sound it produces.</p>
+        <table style="width:100%">
+          <tr align="left">
+            <td>
+            <button name="gong" class="btn"><i class="fa fa-play"></i></button>
+          </td>
+          </tr>
+          <tr>
+            <td><button onclick="wrong1()"
+                style="background-color: #e2eafc;color: #8E4585; border-radius:5px">Woodwind</button></td>
+            <td><button onclick="wrong1()" style="background-color: #e2eafc;color: #8E4585; border-radius:5px">Brass</button>
+            </td>
+            </td>
+            <td><button onclick="right1()"
+                style="background-color: #e2eafc;color: #8E4585; border-radius:5px">Percussion</button></td>
+            </td>
+            <td><button onclick="wrong1()" style="background-color: #e2eafc;color: #8E4585; border-radius:5px">String</button>
+            </td>
+            </td>
+          </tr>
+        </table>
+        <p id="onew" class="answer" style="background-color:#FF5555"></p>
+        <p id="oner" class="answer" style="background-color:#56FF58"></p>
+        <br>
+
+        <table style="width:100%">
+          <tr align="left">
+            <td>
+            <button name="CLARINET" class="btn"><i class="fa fa-play"></i></button>
+          </td>
+          <tr>
+            <td><button onclick="right2()"
+                style="background-color: #e2eafc;color: #8E4585; border-radius:5px">Woodwind</button></td>
+            <td><button onclick="wrong2()" style="background-color: #e2eafc;color: #8E4585; border-radius:5px">Brass</button>
+            </td>
+            </td>
+            <td><button onclick="wrong2()"
+                style="background-color: #e2eafc;color: #8E4585; border-radius:5px">Percussion</button></td>
+            </td>
+            <td><button onclick="wrong2()" style="background-color: #e2eafc;color: #8E4585; border-radius:5px">String</button>
+            </td>
+            </td>
+          </tr>
+        </table>
+        <p id="twow" class="answer" style="background-color:#FF5555"></p>
+        <p id="twor" class="answer" style="background-color:#56FF58"></p>
+        <br>
+
+        <table style="width:100%">
+          <tr align="left">
+            <td>
+            <button name="violin" class="btn"><i class="fa fa-play"></i></button>
+          </td>
+          <tr>
+            <td><button onclick="wrong3()"
+                style="background-color: #e2eafc;color: #8E4585; border-radius:5px">Woodwind</button></td>
+            <td><button onclick="wrong3()" style="background-color: #e2eafc;color: #8E4585; border-radius:5px">Brass</button>
+            </td>
+            </td>
+            <td><button onclick="wrong3()"
+                style="background-color: #e2eafc;color: #8E4585; border-radius:5px">Percussion</button></td>
+            </td>
+            <td><button onclick="right3()" style="background-color: #e2eafc;color: #8E4585; border-radius:5px">String</button>
+            </td>
+            </td>
+          </tr>
+        </table>
+        <p id="threew" class="answer" style="background-color:#FF5555"></p>
+        <p id="threer" class="answer" style="background-color:#56FF58"></p>
+        <br>
+
+        <table style="width:100%">
+          <tr align="left">
+            <td>
+            <button name="frenchhorn" class="btn"><i class="fa fa-play"></i></button>
+          </td>
+          <tr>
+            <td><button onclick="wrong4()"
+                style="background-color: #e2eafc;color: #8E4585; border-radius:5px">Woodwind</button></td>
+            <td><button onclick="right4()" style="background-color: #e2eafc;color: #8E4585; border-radius:5px">Brass</button>
+            </td>
+            </td>
+            <td><button onclick="wrong4()"
+                style="background-color: #e2eafc;color: #8E4585; border-radius:5px">Percussion</button></td>
+            </td>
+            <td><button onclick="wrong4()" style="background-color: #e2eafc;color: #8E4585; border-radius:5px">String</button>
+            </td>
+            </td>
+          </tr>
+        </table>
+        <p id="fourw" class="answer" style="background-color:#FF5555"></p>
+        <p id="fourr" class="answer" style="background-color:#56FF58"></p>
+        <br>
+
+        <div class = "previous">
+          <a href="instruments.html">Revise Info on Instruments</a>
+        </div>
+
+        <script src = "instrumentquiz.js" defer></script>
+  </body>
+</html>
